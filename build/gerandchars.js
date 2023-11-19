@@ -1,3 +1,9 @@
+/*
+     MIT License
+ * Copyright (c) 2023 Haidar Ahmad Faiq * 
+ ---------- GeRandChars ---------- 
+*/
+
 const generate = (function() {
   function randStr(length, size = 'normal') {
     const string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
