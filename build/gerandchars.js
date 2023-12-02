@@ -100,11 +100,19 @@ const generate = (function() {
     return result;
   }
   
+  function randBool() {
+    function randBoolMath() {
+      return Math.random() < 0.5;
+    }
+    return randBoolMath();
+  }
+  
   const generate = {
     randStr,
     randNum,
     randStrNum,
-    randPasswd
+    randPasswd,
+    randBool
   }
   
   return generate;
