@@ -80,7 +80,12 @@ const generate = (function() {
   }
   
   function randPasswd(length) {
-    const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+';
+    const charset = 'abcdefghijklmnopqrstuvwxyz'+
+      'ABCDEFGHIJKLMNOPQRSTUVWXYZ'+
+      '0123456789'+
+      '0123456789'+
+      '!@#$%^&*()-_=+'+
+      '!@#$%^&*()-_=+'
     let result = '';
   
     if (length <= 0) {
