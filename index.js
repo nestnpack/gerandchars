@@ -1,7 +1,7 @@
 /*
      MIT License
  * Copyright (c) 2023 Haidar Ahmad Faiq * 
- ---------- GeRandChars ---------- 
+ ---------- gerandchars ---------- 
 */
 
 const randStr = require('./lib/randStr.js');
