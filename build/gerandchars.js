@@ -134,10 +134,12 @@ const generate = (function() {
       
       if (opacity < 1) {
         alpha = Math.round(opacity * 255);
-        color += toHex(alpha);
+        opacity = alpha;
+      } else {
+        opacity = 255;
       }
       
-      color = `#${toHex(red)}${toHex(green)}${toHex(blue)}`;
+      color = `#${toHex(red)}${toHex(green)}${toHex(blue)}${toHex(opacity)}`;
     }
     
     if(type == 'rgb') {
