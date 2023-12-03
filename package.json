@@ -1,14 +1,14 @@
 {
   "name": "gerandchars",
-  "version": "1.0.0",
-  "description": "Generate Random Characters",
+  "version": "1.1.0",
+  "description": "Generate Random Characters and More",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haidarahmadfaiq/GeRandChars.git"
+    "url": "git+https://github.com/bytenpm/gerandchars.git"
   },
   "keywords": [
     "generate",
@@ -18,12 +18,14 @@
     "characters",
     "character",
     "string",
-    "number"
+    "number",
+    "color",
+    "colors"
   ],
   "author": "Haidar Ahmad Faiq",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/haidarahmadfaiq/GeRandChars/issues"
+    "url": "https://github.com/bytenpm/gerandchars/issues"
   },
-  "homepage": "https://github.com/haidarahmadfaiq/GeRandChars#readme"
+  "homepage": "https://github.com/bytenpm/gerandchars#readme"
 }
