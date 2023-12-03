@@ -1,15 +1,19 @@
 /*
      MIT License
  * Copyright (c) 2023 Haidar Ahmad Faiq * 
- ---------- GeRandChars ---------- 
+ ---------- gerandchars ---------- 
 */
 
 const generate = (function() {
   function randStr(length, size = 'normal') {
     const string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
     let result = '';
-  
-     if (length <= 0) {
+    
+    if (length === undefined) {
+      throw new Error('Enter the length of the string to be generated');
+    }
+    
+    if (length <= 0) {
       throw new Error('Invalid character length (0)');
     }
   
@@ -37,7 +41,11 @@ const generate = (function() {
   function randNum(length) {
     const number = '0123456789';
     let result = '';
-  
+    
+    if (length === undefined) {
+      throw new Error('Enter the length of the number to be generated');
+    }
+    
     if (length <= 0) {
       throw new Error('Invalid character length (0)');
     }
@@ -53,7 +61,11 @@ const generate = (function() {
   function randStrNum(length, size = 'normal') {
     const strnum = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let result = '';
-  
+    
+    if (length === undefined) {
+      throw new Error('Enter the length of the string and number to be generated');
+    }
+    
     if (length <= 0) {
       throw new Error('Invalid character length (0)');
     }
@@ -85,9 +97,13 @@ const generate = (function() {
       '0123456789'+
       '0123456789'+
       '!@#$%^&*()-_=+'+
-      '!@#$%^&*()-_=+'
+      '!@#$%^&*()-_=+';
     let result = '';
-  
+    
+    if (length === undefined) {
+      throw new Error('Enter the length of the password to be generated');
+    }
+    
     if (length <= 0) {
       throw new Error('Invalid character length (0)');
     }
@@ -110,6 +126,10 @@ const generate = (function() {
   function randColor(type, opacity) {
     let color;
     let alpha;
+    
+    if(type === undefined) {
+      throw new Error('Enter the type of color that will be generated');
+    }
     
     if (opacity === undefined) {
       opacity = 0.1 + Math.random() * 1;
@@ -166,6 +186,10 @@ const generate = (function() {
       }
       
       color = `hsla(${hue}, ${saturation}%, ${lightness}%, ${opacity})`;
+    }
+    
+    if(color === undefined) {
+      throw new Error(`[type: ${type}] not found`);
     }
     
     return color;
