@@ -11,13 +11,7 @@ const randStrNum = require('./lib/randStrNum.js');
 const randPasswd = require('./lib/randPasswd.js');
 const randBool = require('./lib/randBool.js');
 const randColor = require('./lib/randColor.js');
-
-console.log(randStr());
-console.log(randNum());
-console.log(randStrNum());
-console.log(randPasswd());
-console.log(randBool());
-console.log(randColor());
+const randEmote = require('./lib/randEmote.js');
 
 module.exports = {
   randStr,
@@ -25,5 +19,6 @@ module.exports = {
   randStrNum,
   randPasswd,
   randBool,
-  randColor
+  randColor,
+  randEmote
 }
