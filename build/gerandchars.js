@@ -1,7 +1,8 @@
 /*
-     MIT License
- * Copyright (c) 2023 Nest Packages * 
- ---------- gerandchars ---------- 
+MIT License
+Copyright (c) 2023 Nest Packages
+
+ ---------- Gerandchars ---------- 
 */
 
 const generate = (function() {
