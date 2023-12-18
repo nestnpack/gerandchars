@@ -5,7 +5,7 @@ Copyright (c) 2023 Nest Packages
  ---------- Gerandchars ---------- 
 */
 
-const generate = (function() {
+const gerandchars = (function() {
   function randStr(length, size = 'normal') {
     const string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
     let result = '';
@@ -196,7 +196,7 @@ const generate = (function() {
     return color;
   }
   
-  const generate = {
+  const gerandchars = {
     randStr,
     randNum,
     randStrNum,
@@ -205,5 +205,5 @@ const generate = (function() {
     randColor
   }
   
-  return generate;
+  return gerandchars;
 })();
