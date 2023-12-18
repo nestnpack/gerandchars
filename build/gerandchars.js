@@ -1,6 +1,6 @@
 /*
      MIT License
- * Copyright (c) 2023 Haidar Ahmad Faiq * 
+ * Copyright (c) 2023 Nest Packages * 
  ---------- gerandchars ---------- 
 */
 
@@ -9,7 +9,7 @@ const generate = (function() {
     const string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
     let result = '';
     
-    if (length === undefined) {
+    if (typeof length === 'undefined') {
       throw new Error('Enter the length of the string to be generated');
     }
     
@@ -42,7 +42,7 @@ const generate = (function() {
     const number = '0123456789';
     let result = '';
     
-    if (length === undefined) {
+    if (typeof length === 'undefined') {
       throw new Error('Enter the length of the number to be generated');
     }
     
@@ -62,7 +62,7 @@ const generate = (function() {
     const strnum = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let result = '';
     
-    if (length === undefined) {
+    if (typeof length === 'undefined') {
       throw new Error('Enter the length of the string and number to be generated');
     }
     
@@ -100,7 +100,7 @@ const generate = (function() {
       '!@#$%^&*()-_=+';
     let result = '';
     
-    if (length === undefined) {
+    if (typeof length === 'undefined') {
       throw new Error('Enter the length of the password to be generated');
     }
     
@@ -127,11 +127,11 @@ const generate = (function() {
     let color;
     let alpha;
     
-    if(type === undefined) {
+    if(typeof type === 'undefined') {
       throw new Error('Enter the type of color that will be generated');
     }
     
-    if (opacity === undefined) {
+    if (typeof opacity === 'undefined') {
       opacity = 0.1 + Math.random() * 1;
     }
     
@@ -188,7 +188,7 @@ const generate = (function() {
       color = `hsla(${hue}, ${saturation}%, ${lightness}%, ${opacity})`;
     }
     
-    if(color === undefined) {
+    if(typeof color === 'undefined') {
       throw new Error(`[type: ${type}] not found`);
     }
     
