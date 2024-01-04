@@ -11,11 +11,11 @@ const gerandchars = (function() {
     let result = '';
     
     if (typeof length === 'undefined') {
-      throw new Error('Enter the length of the string to be generated');
+      throw Error('Enter the length of the string to be generated');
     }
     
     if (length <= 0) {
-      throw new Error('Invalid character length (0)');
+      throw Error('Invalid character length (0)');
     }
   
     for (let i = 0; i < length; i++) {
@@ -44,11 +44,11 @@ const gerandchars = (function() {
     let result = '';
     
     if (typeof length === 'undefined') {
-      throw new Error('Enter the length of the number to be generated');
+      throw Error('Enter the length of the number to be generated');
     }
     
     if (length <= 0) {
-      throw new Error('Invalid character length (0)');
+      throw Error('Invalid character length (0)');
     }
   
     for (let i = 0; i < length; i++) {
@@ -64,11 +64,11 @@ const gerandchars = (function() {
     let result = '';
     
     if (typeof length === 'undefined') {
-      throw new Error('Enter the length of the string and number to be generated');
+      throw Error('Enter the length of the string and number to be generated');
     }
     
     if (length <= 0) {
-      throw new Error('Invalid character length (0)');
+      throw Error('Invalid character length (0)');
     }
   
     for (let i = 0; i < length; i++) {
@@ -102,11 +102,11 @@ const gerandchars = (function() {
     let result = '';
     
     if (typeof length === 'undefined') {
-      throw new Error('Enter the length of the password to be generated');
+      throw Error('Enter the length of the password to be generated');
     }
     
     if (length <= 0) {
-      throw new Error('Invalid character length (0)');
+      throw Error('Invalid character length (0)');
     }
   
     for (let i = 0; i < length; i++) {
@@ -129,7 +129,7 @@ const gerandchars = (function() {
     let alpha;
     
     if(typeof type === 'undefined') {
-      throw new Error('Enter the type of color that will be generated');
+      throw Error('Enter the type of color that will be generated');
     }
     
     if (typeof opacity === 'undefined') {
@@ -190,7 +190,7 @@ const gerandchars = (function() {
     }
     
     if(typeof color === 'undefined') {
-      throw new Error(`[type: ${type}] not found`);
+      throw Error(`[type: ${type}] not found`);
     }
     
     return color;
@@ -207,11 +207,11 @@ const gerandchars = (function() {
     type = type.toLowerCase();
     
     if(typeof type === 'undefined') {
-      return new Error('Enter the type of emote that will be generated');
+      return Error('Enter the type of emote that will be generated');
     }
     
     if (length <= 0) {
-      return new Error('Invalid character length (0)');
+      return Error('Invalid character length (0)');
     }
     
     if(type == 'face') {
