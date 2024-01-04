@@ -1,8 +1,8 @@
 /*
 MIT License
-Copyright (c) 2023 Nest Packages
+Copyright (c) 2024 Nest Packages
 
- ---------- Gerandchars ---------- 
+ ---------- Gerandchars V1.2.3 ---------- 
 */
 
 const randStr = require('./lib/randStr.js');
