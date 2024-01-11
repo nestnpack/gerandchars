@@ -1,4 +1,3 @@
-
 # Generate Random Characters
 
 An npm package that can generate random strings, numbers and more
@@ -127,7 +126,7 @@ gerandchars.randEmote('all', 4);
 ```
 
 
-## Features
+## List
 | Function               | Description                                      |
 | :--------------------- | :----------------------------------------------- |
 | `randStr(length, size [optional])`      | Generate String randomly |
