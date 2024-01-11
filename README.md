@@ -3,10 +3,11 @@
 An npm package that can generate random strings, numbers and more
 
 ## Installation
-Install using npm
+Install with npm
 ```console
 npm install gerandchars
 ```
+
 or connect with CDN
 ```text
 https://www.unpkg.com/gerandchars@latest/gerandchars.js
