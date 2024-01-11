@@ -9,12 +9,11 @@ Install using npm
 npm install gerandchars
 ```
 or connect with CDN
-```bash
+```text
 https://www.unpkg.com/gerandchars@latest/gerandchars.js
 ```
 
-After installing, do the import
-
+## Import
 With require
 ```javascript
 const gerandchars = require('gerandchars');
