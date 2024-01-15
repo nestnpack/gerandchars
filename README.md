@@ -19,11 +19,6 @@ With require
 const gerandchars = require('gerandchars');
 ```
 
-With Tag Script Html
-```html
-<script src="./node_modules/gerandchars/gerandchars.js"></script>
-```
-
 Connect with CDN
 ```html
 <script src="https://www.unpkg.com/gerandchars@latest/gerandchars.js"></script>
