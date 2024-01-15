@@ -2,8 +2,10 @@
 MIT License
 Copyright (c) 2024 Nest Packages
 
- ---------- Gerandchars V1.2.3 ---------- 
+ ---------- Gerandchars V1.2.4 ---------- 
 */
+
+'use strict';
 
 const gerandchars = (function() {
   function randStr(length, size = 'normal') {
