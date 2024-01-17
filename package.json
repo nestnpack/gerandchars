@@ -1,6 +1,6 @@
 {
   "name": "gerandchars",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Generate Random Characters and More",
   "main": "index.js",
   "scripts": {
