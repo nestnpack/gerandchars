@@ -1,9 +1,10 @@
-/*
-MIT License
-Copyright (c) 2024 Nest Packages
+/*!
+---------- Gerandchars V1.2.6 ---------- 
+ * MIT License
+ * Copyright (c) 2023 - 2024 Nest NPack
+ */
 
- ---------- Gerandchars V1.2.4 ---------- 
-*/
+'use strict';
 
 const randStr = require('./lib/randStr.js');
 const randNum = require('./lib/randNum.js');
