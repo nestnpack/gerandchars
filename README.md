@@ -114,8 +114,12 @@ gerandchars.randEmote('all', 4);
 
 //List types
   //face
+  //facecat
   //hand
   //clock
+  //cloud
+  //animal
+  //month
   //number
   //countryflag
   //all
